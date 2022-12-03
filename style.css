@@ -1,0 +1,814 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+    --gray: #525252;
+    --black: #222222;
+    --violet: #8262b5;
+    --gold: #f8ba04;
+    --silver: #d1d1d1;
+    --silver-number: #999999;
+    --silver-hr: #393939;
+    --silver-footer: #828282;
+}
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.total {
+    max-width: 1920px;
+}
+/* header */
+header {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1920px;
+    width: 100%;
+    height: 46px;
+    background-color: var(--black) ;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+.welcome a {
+    color: var(--gray);
+    text-decoration: none;
+    /* font-size: 14px; */
+    padding-left: 30px ;
+}
+.memberall a {
+    color: var(--gray);
+    text-decoration: none;
+    /* font-size: 14.2px; */
+    padding-right: 30px;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1920px;
+    width: 100%;
+    height: 79px;
+    align-items: center;
+    font-family: Montserrat, sans-serif;
+}
+.icon-close {
+    display: none;
+}
+.icon-open {
+    display: none;
+}
+nav .tab .active a {
+    color: var(--violet) ;
+}
+nav .menu {
+    display: none;
+}
+.tab-menu {
+    width: 50%;
+}
+.tab {
+    display: flex;
+    justify-content: space-between;
+}
+.tab a {
+    text-decoration: none;
+    color: black;
+}
+.logo a {
+    color: rgb(0 0 0);
+    text-decoration: none;
+    /* font-weight: bold; */
+    border: 2px solid rgb(0 0 0);
+    padding: 8px 12px;
+    margin-left: 31px;
+    letter-spacing: 7px;
+}
+.shopping {
+    margin-right: 30px;
+}
+.shopping a {
+    color: black;
+    font-size: 25px;
+}
+.tim {
+    margin-right: 33px;
+    font-size: 25px;
+}
+/* side bar  */
+.toggle-btn {
+    font-size: 30px;
+    margin-right: 1.5%;
+    cursor: pointer;
+    align-items: center;
+    display: none;
+    color:#8262b5 ;
+}
+hr {
+    margin-bottom: 28px;
+}
+
+
+/* Banner */
+.picgap {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-bottom: 74px;
+    flex-wrap: wrap;
+}
+.col-left {
+    position: relative;
+}
+.shop1 {
+    position: absolute;
+    bottom: 28%;
+    right: 12.3%;
+    text-decoration: none;
+    color: rgb(240, 255, 255);
+    background-color: rgb(130, 98, 181);
+    padding: 9px 11px;
+    font-family: Montserrat, sans-serif;
+    font-size: 12pt;
+    /* z-index: 2; */
+}
+.text1 {
+    position: absolute;
+    bottom: 36%;
+    right: 12%;
+    font-size: 23pt;
+    font-family: 'Pacifico', cursive;
+    font-weight: bold;
+    z-index: 2;
+}
+.col-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.ad2 {
+    position: relative;   
+}
+.shop2 {
+    position: absolute;
+    bottom: 117px;
+    right: 210px;
+    text-decoration: none;
+    color: rgb(240, 255, 255);
+    background-color: rgb(130, 98, 181);
+    padding: 10px 15px;
+    font-family: Montserrat, sans-serif;
+    font-size: 11pt;
+}
+
+
+/* List item */
+/* title */
+.francoo {
+    color: rgb(130, 98, 181);
+    margin-bottom: 9px;
+    font-weight: bolder;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+h2 {
+    margin-bottom: 75px;
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 2.2px;
+}
+h2::after {
+    height: 2px;
+    width: 49px;
+    content: " ";
+    background-color: rgb(130, 98, 181);
+    position: absolute;
+    top: 51px;
+    left: 0px;
+}
+
+/* items */
+.list-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 54px 0;
+    margin-bottom: 80px; 
+}
+.items {
+    position: relative;
+}
+.btn a {
+    position: absolute;
+    top: 278px ;
+    left: 6px;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    padding: 12px 15px;
+    transition: 0.3s color;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+}
+.btn a:hover {
+    color: #8262b5;
+}
+.list-item .text {
+    margin-top: 10px;
+}
+.list-item p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+.icon {
+    margin-top: 9px;
+    font-size: 10px;
+}
+.number {
+    margin-top: 5px;
+    color: var(--violet) ;
+}
+.gold {
+    color: var(--gold);
+}
+.silver {
+    color: var(--silver);
+}
+.line-through {
+    text-decoration: line-through;
+    color: var(--silver-number);
+}
+
+/* Slick */
+.latest {
+    padding-bottom :105px
+}
+.oce { 
+    padding-top: 75px;
+    padding-bottom: 9px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: #8262b5;
+}
+.latest h2 {
+    text-align: center;
+    position: relative;
+    margin-bottom: 74px;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 4px;
+    font-size: 22px;
+    font-weight: bold;
+}
+.latest h2::after {
+    content: "";
+    height: 1px;
+    width: 50px;
+    position: absolute;
+    left: calc(50% - 25px);
+    bottom: -25px;
+    background-color: var(--violet);
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    margin: 0 10px;
+    width: 360px;
+    background-color: white ;
+    position: relative;
+}
+.card img {
+    position: relative;
+    width: 360px;
+}
+
+.card>p {
+    position: absolute; left: 26px; top: 30px;
+    border: 1px solid white;
+    color: white;
+    background-color: rgb(162, 209, 221);
+    padding: 10px 16px ;
+    outline: 6px solid rgb(162, 209, 221);
+    text-align: center;
+    font-size: 14pt;
+}
+.card span {
+    font-weight: 900;
+}
+.card-text {
+    padding: 2px 16px;
+    width: 100%;
+}
+.card-text h3 {
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+.card-text h3 a {
+    text-decoration: none;
+    color:black;
+}
+.card-text h3 a:hover {
+    color: rgb(130, 98, 181);
+    transition: 0.3s color;
+}
+
+.card-text .aliquam {
+    line-height: 20px;
+    color: rgb(91, 91, 91);
+    width: 320px;
+}
+.card::after {
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: 100%;
+    background-color: rgb(209, 209, 209);
+    bottom: 60px;
+}
+.card-text i {
+    padding: 30px 0;
+    color: rgb(192, 192, 192); 
+}
+.card-text .number {
+    color: rgb(192, 192, 192);
+}
+.card-text .hearth {
+    margin-left: 20px;
+}
+.slick-dots {
+    position: absolute;
+    bottom: 14px;
+    left: 50%;
+    transform:translate(-50%, 50px) ;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    gap: 13px;
+}
+.slick-dots button {
+    font-size: 0;
+    width: 12px;
+    height: 12px;
+    border-radius: 100px;
+    border: none;
+    outline: none;
+    background-color: rgb(179, 166 , 199);
+}
+.slick-dots .slick-active button {
+    background-color: rgb( 130, 98, 181);
+    width: 16px;
+    height: 16px;
+}
+::marker {
+    font-size: 0;
+}
+
+/* footer */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 31px;
+    padding-top: 59px;
+}
+.about {
+    width: 25%;
+}
+.navigation {
+    width: 34%;
+}
+.shoplocation {
+    width: 23%;
+}
+.navi {
+    display: flex;
+    justify-content: space-between;
+}
+.navi02 {
+    width: 50%;
+}
+.footer h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 16px;
+    padding-bottom: 53px;
+    /* position: relative; */
+}
+.footer hr {
+    margin: -27px 0 23px 0;
+    /* height: 0px; */
+    border-top: 1px solid var(--silver-hr);
+}
+.footer p {
+    color: var(--silver-footer);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+.about p {
+    margin-bottom: 45px;
+}
+.about a {
+    text-decoration: none;
+    color: var(--silver-footer);
+}
+.navi a {
+    text-decoration: none;
+    color: var(--silver-footer);
+    transition: 0.3s color;
+}
+.navi a:hover {
+    text-decoration: underline;
+    color: white;
+}
+.navi p {
+    line-height: 30px;
+}
+.shoplocation p {
+    line-height: 32px;
+}
+.no-icon {
+    padding-left: 28px ;
+}
+
+.footer-end {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-end p { 
+    color: var(--silver-footer);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+.heart {
+    color: red;
+}
+span {
+    color: white;
+}
+.pay p { 
+    font-size: 20px;
+}
+
+/*===== Reponsive ====*/
+
+/* Tablet: ipad pro */
+@media only screen and (min-width: 415px) and (max-width: 1024px) {
+    /* col-left */
+    .tab {
+        display: flex;
+        font-size: 10px;
+    }
+    .picgap {
+        max-width: 800px ;
+        margin: 0 auto 74px;    
+    }
+    .col-left {
+        width: 66%;
+    }
+    .col-left img {
+        width: 100%;
+    }
+    .col-left p {
+        font-size: 24px;
+        left: 40%;
+        bottom: 35%;
+    }
+    .col-left a {
+        font-size: 13px;
+        left: 65%;
+        bottom: 25%;
+        padding: 10px 25px;
+    }
+    
+
+    /* col-right */
+    .col-right {
+        width: 32%;
+    }
+    .col-right img {
+        width: 100%;
+    }   
+    .col-right a {
+        font-size: 12px;
+        bottom: 37%;
+        padding: 9px 14px;
+        right: 56%;
+    }
+    /* items */
+    .the-items {
+        max-width: 800px;
+        width: 100%;
+        margin: 0 auto 80px;
+    }
+    .items {
+        width: calc(25% - 10px);
+    }
+    .items img {
+        width: 100%;
+    }
+    .items a {
+        left: 3%;
+        top: 64%;
+        font-size: 10px;
+    }
+    .items .text {
+        font-size: 10px ;
+    }
+    /* Slick */
+    .cards {
+        max-width: 800px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .card img {
+        width: 100%;
+    }
+    .card-text {
+        font-size: 70%;
+    }
+    .card .aliquam {
+        width: 215px;
+    }
+
+    /* footer */
+    .footer {
+        max-width: 800px;
+        width: 100%;
+        margin: 0 auto 31px;
+    }
+    .about p {
+        margin-bottom: 24px;
+    }
+    .navi02 {
+        width: calc(58% - 10px);
+    }
+    .footer-col {
+        width: calc(31% - 15px);
+    }
+    /* footer-end */
+    .footer-end {
+        max-width: 800px;
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+/* Mobile SS s20 ultra*/
+@media only screen and  (max-width: 414px){
+    /* Header */
+    .total {
+        width: 100%;
+    }
+    header { 
+        display: block ;
+        height: 50%;
+        flex-direction: column;
+    }
+    header a {
+        font-size: 80%;
+    }
+    .welcome  {
+        padding: 1% 1%;
+    }
+    .welcome a {
+        padding: 0;
+    }
+    .memberall {
+        padding: 1% 1%;
+    }
+    .memberall .shop {
+        padding-right: 2%;
+    }
+    nav {
+        height: 60px;
+    }
+    .logo { 
+        font-size: 60%;
+        margin-left: -27px;
+        width: 80%;
+    }
+    .tim {
+        margin-right: 8px;
+    }
+    .shopping {
+        margin-right: 30px;
+        position: absolute;
+        right: 10px;
+    }
+    
+    /* Side-bar  */
+    .icon-open {
+        position: relative;
+        display: block;
+        text-align: right;
+        color: #8262b5;
+        margin-right: 5px;
+        font-size: 29px;
+    }
+    .icon-close {
+        display: block;
+        color: #8262b5;
+        text-align: right;
+        font-size: 32px;
+        margin: 1% 3%;
+
+    }
+    .tab-close {
+        max-width: 50%;
+        width: 45%;
+        height: 50%;
+        right: 0;
+        bottom: 0;
+        top: 9%;
+        z-index: 3;
+        display: none;
+        background-color: #f4f4f4 ;
+        position: fixed;
+
+    }
+    .tab {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        line-height: 30px;
+        font-size: 12px;
+    }
+    .tab a {
+        width: 100%;
+        transition: all 0.3s ;
+        padding-left: 10%;
+    }
+    .tab .active {
+        width: 100%;
+        transition: all 0.3s ;
+        padding-left: 10%;
+    }
+    .tab .active a {
+        padding: 0;
+    }
+    .tab a:hover {
+        background-color: #8262b5;
+    }
+    .tab .active:hover {
+        background-color: black;
+    }
+    
+
+    /* Banner  */
+    .picgap {
+        max-width: 80%;
+        margin:0 auto 50px;
+    }
+    .col-left img {
+        width: 100%;
+    }
+    .col-left p {
+        font-size: 86%;
+        left: 44%;
+        bottom: 36%;
+    }
+    .col-left a {
+        font-size: 62%;
+        left: 59%;
+        bottom: 19%;
+        padding: 10px 21px;
+    }
+    .picgap {
+        gap: 10px;
+    }
+    .col-right {
+        gap: 10px;
+    }
+    .col-right img {
+        width: 100%;
+    }
+    .col-right a {
+        font-size: 58%;
+        bottom: 39%;
+        padding: 9px 14px;
+        right: 67%;
+    }
+
+    /* List item  */
+    .the-items {
+        max-width: 80%;
+        margin: 0 auto 20px;
+    }
+    .items img {
+        width: 150px;
+    }
+    .items .btn a {
+        font-size: 8px;
+        top: 58%;
+        left: 2%;
+    }
+    .items .text {
+        font-size: 12px;
+    }
+    h2 {
+        margin-bottom: 50px;
+    }
+    .list-item {
+        gap: 16px;
+        margin-bottom: 70px;
+    }
+
+    /* Slick  */
+    .latest p h2 {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    .cards {
+        width: 80%;
+    }
+    .card img {
+        width: 100%;
+    }
+
+    /* Footer  */
+    .footer {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+    .footer {
+        flex-direction: column;
+        gap: 50px;
+    }
+    .footer-col {
+        width: 100%;
+    }
+    
+    .shoplocation {
+        margin-bottom: 10%;
+    }
+    .footer-end {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+    .footer-end p {
+        font-size: 60%;
+    }
+    .card-text .aliquam {
+            font-size: 98%;
+            width: 92%;
+        } 
+    }
+
+    @media only screen and (max-width: 321px) {
+        /* items  */
+        .list-item {
+            row-gap: 30px;
+        }
+        .items {
+            width: 40%;
+        }
+        .items img {
+            width: 100%;
+        }
+        .items .btn a{
+            font-size: 6px;
+            top: 54%;
+            left: 2%;
+            padding: 8px;
+        }
+        .items .text {
+            font-size: 52%;
+        }
+
+        /* picgap  */
+        .col-left p {
+            font-size: 72%;
+            left: 40%;
+            bottom: 37%;    
+        }
+        .col-left a {
+            font-size: 50%;
+            left: 61%;
+            bottom: 22%;
+            padding: 7px 12px;
+        }
+        .col-right a {
+            font-size: 58%;
+            bottom: 39%;
+            padding: 9px 14px;
+            right: 60%;
+        }
+
+        /* Footer  */
+        .footer-end {
+            flex-direction: column;
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            font-size: 100%;
+        }
+
+
+    }
+
+
