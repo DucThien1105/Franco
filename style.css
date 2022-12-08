@@ -64,9 +64,11 @@ nav .tab .active a {
 }
 nav .menu {
     display: none;
+    align-items: center;
 }
 .tab-menu {
     width: 50%;
+    align-items: center ;
 }
 .tab {
     display: flex;
@@ -454,14 +456,16 @@ span {
     font-size: 20px;
 }
 
+
+
+
 /*===== Reponsive ====*/
 
-/* Tablet: ipad pro */
-@media only screen and (min-width: 415px) and (max-width: 1024px) {
+@media only screen and (min-width: 800px) and (max-width: 1110px) {
     /* col-left */
     .tab {
         display: flex;
-        font-size: 10px;
+        font-size: 10px; 
     }
     .picgap {
         max-width: 800px ;
@@ -499,6 +503,7 @@ span {
         padding: 9px 14px;
         right: 56%;
     }
+
     /* items */
     .the-items {
         max-width: 800px;
@@ -519,6 +524,7 @@ span {
     .items .text {
         font-size: 10px ;
     }
+
     /* Slick */
     .cards {
         max-width: 800px;
@@ -558,16 +564,125 @@ span {
     }
 }
 
-/* Mobile SS s20 ultra*/
-@media only screen and  (max-width: 414px){
-    /* Header */
-    .total {
+
+
+/* ------------------------- */
+@media only screen and (min-width: 600px) and (max-width: 799px) {
+    /* === Header === */
+    .welcome {
+        font-size: 85%;
+    }
+    .memberall {
+        font-size: 85%;
+    }
+    .logo  {
+        font-size: 45%;
+    }
+    .shopping .fa-regular { 
+        font-size: 50%;
+        margin-right: 10px;
+    }
+    .shopping .fa-solid {
+        font-size: 50%;
+    }
+    nav .tab {
+        font-size: 50%;
+    }
+
+    /* === Banner === */
+    /* picgap  */
+    .picgap {
+        gap: 10px;
+    }
+    .col-left {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    .col-left img {
         width: 100%;
     }
+    .col-left p {
+        bottom: 36%;
+        left: 41%;
+        font-size: 22px;
+    }
+    .col-left a {
+        bottom: 24%;
+    }
+    /* ------------------------ */
+    .col-right {
+        margin: 0 auto;
+        width: 500px; 
+        gap: 10px;
+    }
+    .col-right img { 
+        width: 100%;
+    }
+    .col-right a {
+        left: 9%;
+        bottom: 39%;
+        right: 346px;
+    }
+
+    /* Future Items  */
+    .the-items {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    .items{
+        max-width: 240px;
+    }
+    .items img {
+        width: 100% ;
+    }
+    .items a {
+        top: 67%;
+    }
+
+
+    /* === Slick === */
+    .card {
+        max-width: 50%;
+    }
+    .card img {
+        width: 100%;
+    }
+    .card .aliquam {
+        font-size: 16px;
+        width: 100%;
+    }
+    .card-text h3 a {
+        font-size: 83%;
+    }
+
+
+    /* === Footer === */
+    .footer h3 {
+        font-size: 80%;
+    }
+    .footer p {
+        font-size: 60%;
+    }
+    .footer .about a {
+        font-size: 90%;
+    }
+    .shoplocation .no-icon {
+        padding-left: 0%;
+    }
+
+    .footer-end p {
+        font-size: 80%;
+    }
+}
+
+
+
+/* ---------------------------- */
+@media only screen and (min-width: 300px) and (max-width: 599px) {
+    /* Header */
     header { 
         display: block ;
         height: 50%;
-        flex-direction: column;
     }
     header a {
         font-size: 80%;
@@ -609,26 +724,27 @@ span {
         color: #8262b5;
         margin-right: 5px;
         font-size: 29px;
+        position: relative;
     }
     .icon-close {
         display: block;
-        color: #8262b5;
-        text-align: right;
+        color: var(--violet);
+        text-align: end;
         font-size: 32px;
-        margin: 1% 3%;
+        margin: 2% 3%;
 
     }
     .tab-close {
-        max-width: 50%;
-        width: 45%;
-        height: 50%;
-        right: 0;
-        bottom: 0;
-        top: 9%;
-        z-index: 3;
+        position: absolute;
+        width: 50%;
+        height: 290px;
+        right: 4px;
+        top: 64px;
+        z-index: 555;
         display: none;
-        background-color: #f4f4f4 ;
+        background-color: var(--gray);
         position: fixed;
+        border-radius: 10px;
 
     }
     .tab {
@@ -653,34 +769,35 @@ span {
     }
     .tab a:hover {
         background-color: #8262b5;
+        border-radius: 10px;
     }
     .tab .active:hover {
         background-color: black;
+        border-radius: 10px;
+
     }
     
-
     /* Banner  */
     .picgap {
-        max-width: 80%;
+        max-width: 300px;
         margin:0 auto 50px;
+        gap: 10px;
     }
     .col-left img {
         width: 100%;
     }
-    .col-left p {
-        font-size: 86%;
+    .col-left .text1 {
+        font-size: 65%;
         left: 44%;
-        bottom: 36%;
+        bottom: 37%;
     }
-    .col-left a {
-        font-size: 62%;
+    .col-left .shop1 {
+        font-size: 60%;
         left: 59%;
         bottom: 19%;
         padding: 10px 21px;
     }
-    .picgap {
-        gap: 10px;
-    }
+    /* -------------------------- */
     .col-right {
         gap: 10px;
     }
@@ -759,7 +876,9 @@ span {
         } 
     }
 
-    @media only screen and (max-width: 321px) {
+
+    /* iphone 5 
+    @media only screen and (max-width: 320px) {
         /* items  */
         .list-item {
             row-gap: 30px;
@@ -807,8 +926,6 @@ span {
             gap: 10px;
             font-size: 100%;
         }
-
-
-    }
+    } */
 
 
