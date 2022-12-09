@@ -28,10 +28,13 @@ $(document).ready(function(){
       }
     },
     {
-    //   breakpoint: 480,
+      breakpoint: 520,
       settings: {
         slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        infinite: true,
+        row: 1,
+        dots: true
       }
     }
   ]
